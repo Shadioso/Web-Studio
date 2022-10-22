@@ -1,10 +1,10 @@
 :root {
-  --primary-text-colour: rgba(255, 255, 255, 1);
-  --tittle-text-colour: rgba(33, 33, 33, 1);
-  --accent-text-colour: rgba(33, 150, 243, 1);
-  --main-text-colour: rgba(117, 117, 117, 1);
-  --background-colour: rgba(47, 48, 58, 1);
-  --background-button-colour: rgba(245, 244, 250, 1);
+  --primary-text-colour: #ffffff;
+  --tittle-text-colour: #212121;
+  --accent-text-colour: #2196f3;
+  --main-text-colour: #757575;
+  --background-colour: #2f303a;
+  --background-button-colour: #f5f4fa;
 }
 .visually-hidden {
   position: absolute;
@@ -30,7 +30,7 @@ a {
 }
 /* logo */
 .logo {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 .logo-text {
   color: var(--accent-text-colour);
@@ -93,7 +93,7 @@ ul {
 }
 .hero .hero-button:hover,
 .hero .hero-button:focus {
-  background-color: rgba(24, 140, 232, 1);
+  background-color: #188ce8;
 }
 /*  button-navigation */
 .project .button-link {
@@ -139,6 +139,11 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.feature-list p {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 /* team */
