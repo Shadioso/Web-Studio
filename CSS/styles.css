@@ -1,3 +1,12 @@
+/* root */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-text-colour: #ffffff;
   --tittle-text-colour: #212121;
@@ -6,6 +15,9 @@
   --background-colour: #2f303a;
   --background-button-colour: #f5f4fa;
 }
+/* * {
+  outline: 1px solid tomato;
+} */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -28,6 +40,20 @@ body {
 a {
   text-decoration: none;
 }
+
+.section,
+.page-header,
+.container.hero {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ */
+
 /* logo */
 .logo {
   color: #000000;
@@ -43,11 +69,53 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+/* .................. */
+.page-header .logo {
+  margin-right: 93px;
+  display: flex;
+  align-items: center;
+}
+/* ................ */
 
 ul {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
 }
-/* site-nav */
+/* zzzzzzzzzzzzzzzzzzzzzzzzzzz */
+.page-header .site-nav-list {
+  display: flex;
+}
+.page-header .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.page-header .site-nav-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header .site-contact {
+  display: flex;
+  margin-left: auto;
+}
+.page-header .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.page-header .site-contact li:not(:first-child) {
+  margin-left: 50px;
+}
+.section.header nav {
+  display: flex;
+}
+
+.section.header {
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid #ececec;
+}
 .site-nav-list .site-nav-link,
 .site-contact .contact-link {
   color: var(--tittle-text-colour);
@@ -56,6 +124,7 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+
 .site-nav-list .site-nav-link:hover,
 .site-nav-list .site-nav-link:focus,
 .site-nav-list .site-nav-link.current {
@@ -68,19 +137,35 @@ ul {
 .site-contact .contact-link:focus {
   color: var(--accent-text-colour);
 }
+
 /* hero */
 .hero .hero-tittle {
   color: var(--primary-text-colour);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  height: 120px;
+  text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero {
   background-color: var(--background-colour);
+  height: 600px;
+  text-align: center;
 }
+.container.hero {
+  padding-top: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .hero .hero-button {
   color: var(--primary-text-colour);
   background-color: var(--accent-text-colour);
@@ -90,6 +175,13 @@ ul {
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  height: 50px;
+  min-width: 214px;
+  border: 1px solid transparent;
 }
 .hero .hero-button:hover,
 .hero .hero-button:focus {
@@ -105,6 +197,20 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  display: inline-block;
+  width: 112px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.project .button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.button-list li:not(:first-child) {
+  margin-left: 8px;
 }
 .project .button-link:hover,
 .project .button-link:focus {
@@ -117,12 +223,36 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin: 20px 24px 4px;
 }
 .project p {
   color: var(--main-text-colour);
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
+  margin: 0px 24px 20px;
+}
+.project {
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project .project-list li {
+  flex-basis: calc((100% - 90px) / 3);
+  border-bottom: 1px solid #eeeeee;
+}
+.project .project-list img {
+  display: block;
 }
 /* main content */
 .section-tittle {
@@ -131,19 +261,58 @@ ul {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
 }
 /* features */
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-list li {
+  width: 270px;
+  height: 98px;
+}
 .feature-list .tittle {
   color: var(--tittle-text-colour);
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .feature-list p {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.section.one {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.two {
+  padding-bottom: 188px;
+}
+.section.three {
+  padding-bottom: 94px;
+}
+.employment-list {
+  display: flex;
+}
+.employment-list li:not(:first-child),
+.team-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.employment-list img {
+  display: block;
 }
 
 /* team */
@@ -153,21 +322,57 @@ ul {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-list p {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  margin-bottom: 30px;
+  margin-top: 0px;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+}
+.team-list li {
+  display: block;
+  height: 368px;
+}
+.team-list img {
+  display: block;
 }
 /* footer */
 .section-footer {
   background-color: var(--background-colour);
+  height: 252px;
+  padding-top: 60px;
+}
+.container.footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo-text-footer {
   color: var(--primary-text-colour);
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .adress .adress-tittle {
   color: var(--primary-text-colour);
+}
+.adress li:not(:last-child) {
+  margin-bottom: 9px;
+  display: block;
+}
+.adress a {
+  display: block;
 }
 .communication,
 .adress .adress-tittle {
