@@ -310,6 +310,9 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section.one {
+  padding-bottom: 0px;
+}
 .section.three {
   background: #f5f4fa;
 }
@@ -331,32 +334,35 @@ ul {
   letter-spacing: 0.03em;
 
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
+.team-card {
+  background-color: var(--primary-text-colour);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-list p {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
-  margin-bottom: 30px;
-  margin-top: 0px;
   text-align: center;
+  margin-bottom: 0px;
 }
 .team-list {
   display: flex;
 }
 .team-list li {
   display: block;
-  height: 368px;
+  border-radius: 0px 0px 4px 4px;
   border: 1px solid transparent;
 }
 
 /* footer */
 .section-footer {
   background-color: var(--background-colour);
-  height: 252px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .container.footer {
   width: 1200px;
