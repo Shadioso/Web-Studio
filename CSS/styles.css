@@ -313,14 +313,10 @@ ul {
 }
 .feature-list li {
   width: 270px;
-  height: 98px;
+  height: 100%;
 }
+
 .icon-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-.icon-list li {
   height: 120px;
   width: 270px;
   background-color: #f5f4fa;
@@ -328,6 +324,7 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .svg-icon {
   width: 70px;
@@ -356,6 +353,7 @@ ul {
 .section.one,
 .section.two,
 .section.three,
+.section.four,
 .projects {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -365,9 +363,6 @@ ul {
 }
 .section.three {
   background: #f5f4fa;
-}
-.section.four {
-  padding-bottom: 94px;
 }
 
 .employment-list {
@@ -436,11 +431,15 @@ ul {
   margin-left: 0px;
 }
 
-.team-contact .svg-icon,
-.join-list .svg-icon {
+.team-contact .svg-icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-text-colour);
+}
+.join-list .svg-icon {
+  fill: var(--primary-text-colour);
+  width: 20px;
+  height: 20px;
 }
 .team-contact .team-link:hover .svg-icon,
 .team-contact .team-link:focus .svg-icon,
@@ -494,6 +493,7 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  align-items: baseline;
 
   display: flex;
 }
@@ -535,11 +535,9 @@ ul {
   width: 206px;
   height: 80px;
   margin-left: 70px;
-  margin-top: 12px;
-  margin-bottom: 40px;
-  margin-left: 70px;
 }
 .join-tittle {
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.1;
