@@ -1,0 +1,39 @@
+.employment__tittle,
+.team__tittle,
+.clients__tittle {
+  color: var(--tittle-text-colour);
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.employment__list {
+  display: flex;
+}
+.employment__item:not(:first-child),
+.team-list__item:not(:first-child) {
+  margin-left: 30px;
+}
+.employment__group {
+  position: relative;
+}
+.employment__label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px 95px;
+  background: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+}
+.label__tittle {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-colour);
+  margin-bottom: 0px;
+  text-align: center;
+}

@@ -1,0 +1,118 @@
+.section-footer {
+  background-color: var(--background-colour);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container.footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-block {
+  width: 207px;
+  height: 100%;
+}
+// ADRESS
+.adress-list__point {
+  color: var(--primary-text-colour);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-colour);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.adress-list__item:not(:last-child) {
+  margin-bottom: 9px;
+  display: block;
+}
+.adress-list__point,
+.adres-list__communication {
+  display: block;
+}
+.adres-list__communication,
+.adress-list__point {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.adres-list__communication {
+  color: var(--main-text-colour);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-colour);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// JOIN BLOCK
+.join {
+  display: inline-block;
+  width: 206px;
+  height: 80px;
+}
+.join__tittle {
+  font-weight: 700;
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-colour);
+
+  margin-bottom: 20px;
+}
+.join-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: center;
+}
+.join-list__item {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  box-shadow: none;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.join-list__svg-icon {
+  fill: var(--primary-text-colour);
+  width: 20px;
+  height: 20px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// INPUT
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+  width: 570px;
+  height: 86px;
+}
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: var(--primary-text-colour);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-colour);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-text-colour);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
