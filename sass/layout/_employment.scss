@@ -1,3 +1,8 @@
+.employment {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .employment__tittle,
 .team__tittle,
 .clients__tittle {
@@ -13,8 +18,7 @@
 .employment__list {
   display: flex;
 }
-.employment__item:not(:first-child),
-.team-list__item:not(:first-child) {
+.employment__item:not(:first-child) {
   margin-left: 30px;
 }
 .employment__group {
