@@ -818,8 +818,8 @@ a {
 .hero {
   text-align: center;
   padding: 118px 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/img.p1/hero/backimg/header\ img-480.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/img.p1/hero/backimg/header\ img-480.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/img.p1/hero/backimg/headerimg-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/img.p1/hero/backimg/headerimg-480.jpg);
   background-color: rgb(196, 196, 196);
   height: 400px;
   max-width: 1600px;
@@ -837,27 +837,27 @@ a {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/img.p1/hero/backimg/header\ img-480@2x.jpg);
+    background-image: url(/images/img.p1/hero/backimg/headerimg-480@2x.jpg);
   }
 }
 @media (min-width: 768px) {
   .hero {
-    background-image: url(/images/img.p1/hero/backimg/header\ img-768.jpg);
+    background-image: url(/images/img.p1/hero/backimg/headerimg-768.jpg);
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/img.p1/hero/backimg/header\ img-768@2x.jpg);
+    background-image: url(/images/img.p1/hero/backimg/headerimg-768@2x.jpg);
   }
 }
 @media (min-width: 1200px) {
   .hero {
-    background-image: url(/images/img.p1/hero/backimg/header\ img-1600.jpg);
+    background-image: url(/images/img.p1/hero/backimg/headerimg-1600.jpg);
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/img.p1/hero/backimg/header\ img-1600@2x.jpg);
+    background-image: url(/images/img.p1/hero/backimg/headerimg-1600@2x.jpg);
   }
 }
 
@@ -1553,10 +1553,6 @@ a {
 .header-nav-mobile__item:not(:last-child),
 .header-contact-mobile__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.header-nav-mobile__item:last-child {
-  margin-bottom: 302px;
 }
 
 .header-contact-mobile__link.number {
