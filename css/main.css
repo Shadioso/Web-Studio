@@ -1514,7 +1514,7 @@ a {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -1553,10 +1553,6 @@ a {
 .header-nav-mobile__item:not(:last-child),
 .header-contact-mobile__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.header-nav-mobile__item:last-child {
-  margin-bottom: 302px;
 }
 
 .header-contact-mobile__link.number {
@@ -1598,4 +1594,21 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-text-colour);
+}
+
+.page-header__mobile-menu-box {
+  height: 540px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
